@@ -58,7 +58,7 @@
         }
         canvas {
           width: 75vw;
-          height: 50vh;
+          max-height: 300px;
           display: block;
         }
         .contact-button {
@@ -400,7 +400,7 @@
     	
     	this.screen.scale = opts.focalLength / z;
     	this.screen.x = opts.vanishPoint.x + x * this.screen.scale;
-    	this.screen.y = opts.vanishPoint.y + y * this.screen.scale * 0.7;
+    	this.screen.y = opts.vanishPoint.y + y * this.screen.scale;
     	
     }
     function squareDist( a, b ){
